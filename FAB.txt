@@ -1,0 +1,24 @@
+Features:
+
+I excel in collaboration and take pair programming seriously, believing that everything meaningful we achieve in this world is done with others. While Java was my first favorite language, I’ve recently focused on Python and JavaScript.
+
+I have a curious mind and a broad educational background that enables me to explore multiple potential solutions before honing in on the most effective one.
+
+I am data-driven in my design decisions, committed to a 'test-first' approach in implementation, and prioritize integrating observability into business-relevant processes.
+
+Advantages:
+
+At Lululemon, I led the creation of a couple of data-driven ML tools for our Personalization project. One notable project involved addressing the question, “How should our recommendation engine work?” I transformed raw, unnormalized data gathered from each end-user as they navigated the site into 'attention vectors.' I then incorporated the 'Total Lifetime Value' (TLV) of each user and used a high-dimensional KNN algorithm to categorize them. The analysis revealed that lower TLV users had more random navigation paths (high entropy), while higher TLV users were more focused. This led us to conclude that we should 'raise the temperature' of the recommendation engine for newer customers while being more conservative with recommendations for experienced users.
+
+In another project, we explored the question, “How can we make our SEO and advertisements more effective?” I analyzed our inventory descriptions, creating a 'product space' from thousands of products and used a clustering mechanism to group them. A key finding was that our products were spread across nearly 100 categories, not just the 8 we initially believed. This insight allowed our SEO team to make more targeted recommendations, such as focusing on 'casual outdoors' rather than just 'tennis.' My go-to ML framework for these tasks has been FastAI.
+
+I have a strong interest in observability: On Lululemon's EDDL data telemetry team, my focus on observability led to the successful introduction and implementation of Datadog. This tool was crucial for monitoring our signal processing systems, ensuring consistent tag performance and uptime, guaranteeing the accuracy of tag data, and maintaining full compliance with privacy laws and data protection regulations.
+
+Benefits:
+
+The benefit of having a curious mind: Lululemon’s recommendation engine originally treated all users the same, whether they were first-time visitors or long-term customers. By leveraging my bucketized result set, I was able to design a graduated 'search recommendation' plan that included users' nearest 'similar behavior cohort,' enhancing the accuracy and relevance of search recommendations.
+
+The introduction of Datadog provided continuous monitoring of tag functionality and uptime, safeguarding the quality and effectiveness of our advertising investments. A significant benefit was the reduction in the 'mean time to acknowledge' (MTTA) data loss with existing vendors and tags. Previously, our MTTA was nearly a week, with data loss costing over a million dollars per day. With Datadog, we reduced the slowest acknowledgment rate to just one day.
+
+
+

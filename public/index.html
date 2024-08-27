@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Button Fetch</title>
+    <script>
+        function fetchJson(id) {
+            fetch(`/getJson/${id}`)
+                .then(response => response.json())
+                .then(data => {
+
+
+                    const std = data["data"]['stdDevVectors'][0]['stdDevVector']
+//                    const std = data["data"]["stdDevVectors"]
+
+//                   console.log(",,,,, " + JSON.stringify(std[0], null, 2 ) );
+                    document.getElementById('output').innerText = JSON.stringify(std, null, 2);
+                })
+                .catch(error => console.error('Error fetching JSON:', error));
+        }
+    </script>
+</head>
+<body>
+    <h1>Select a JSON file</h1>
+    <button onclick="fetchJson('0')">Zero</button>
+    <button onclick="fetchJson('1')">One</button>
+    <button onclick="fetchJson('2')">Two</button>
+    <button onclick="fetchJson('3')">Three</button>
+
+    <pre id="output"></pre>
+</body>
+</html>
